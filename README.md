@@ -44,16 +44,16 @@ Then modify the volume to either match the volume line for Medusa if running it 
 
 Next, configure the environment variables.
 
-`WATCH_DIRECTORY` - The watch directory is both what will be watched for changes, and the directory that will be sent to Medusa for post-processing.
-`MEDUSA_HOST` - A hostname and port combination that is accessible from the `inotify-medusa` container. Be sure to include the scheme (`http://` or `https://`)
-`MEDUSA_API_TOKEN` - An API token retrieved from the Medusa settings page.
-`MEUDSA_PROCESS_METHOD` - This can be move, copy, hardlink, symlink, or reflink. View the Medusa docs for the differences.
+- `WATCH_DIRECTORY` - The watch directory is both what will be watched for changes, and the directory that will be sent to Medusa for post-processing.
+- `MEDUSA_HOST` - A hostname and port combination that is accessible from the `inotify-medusa` container. Be sure to include the scheme (`http://` or `https://`)
+- `MEDUSA_API_TOKEN` - An API token retrieved from the Medusa settings page.
+- `MEUDSA_PROCESS_METHOD` - This can be move, copy, hardlink, symlink, or reflink. View the Medusa docs for the differences.
 
 Optionally, you may configure the following environments as well. By default, they are all set to `false`.
 
-`MEDUSA_FORCE_REPLACE`
-`MEDUSA_DELETE_FILES`
-`MEDUSA_IS_PRIORITY`
+- `MEDUSA_FORCE_REPLACE`
+- `MEDUSA_DELETE_FILES`
+- `MEDUSA_IS_PRIORITY`
 
 Refer to the Medusa docs for these settings.
 
